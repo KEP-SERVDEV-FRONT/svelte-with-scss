@@ -10,6 +10,20 @@ svelte에 scss를 에러없이 사용하기 위한 환경셋팅 적용.
 ---
 - **@rollup/plugin-alias, path**: 기본 소스 경로를 설정할 수 있게 합니다.
 ```js
+// rollup.config.js
+export default {
+  ...
+  plugins: [
+    ...
+    alias({
+      entries: [
+        { find: '@', replacement: path.resolve(__dirname, 'src') }
+      ]
+    ...
+    }),
+  ...
+```
+```js
 // Before
 import Button from '../../components/Button.svelte';
 
