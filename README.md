@@ -9,6 +9,8 @@ svelte 시작 템플릿에 scss를 에러없이 사용하기 위한 환경셋팅
 - <a href="https://www.npmjs.com/package/path" target="_blank">path</a>
 
 ---
+
+## 설치된 모듈 설명
 - **@rollup/plugin-alias, path**: 기본 소스 경로를 설정할 수 있게 합니다.
 ```js
 // rollup.config.js
