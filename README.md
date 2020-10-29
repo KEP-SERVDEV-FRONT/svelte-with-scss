@@ -1,8 +1,9 @@
 # svelte-with-scss
-svelte에 scss를 에러없이 사용하기 위한 환경셋팅 적용.
+svelte 시작 템플릿에 scss를 에러없이 사용하기 위한 환경셋팅 적용.
 
 ## 추가한 모듈
 - <a href="https://www.npmjs.com/package/@rollup/plugin-alias" target="_blank">@rollup/plugin-alias</a>
+- <a href="https://www.npmjs.com/package/sass" target="_blank">sass</a>
 - <a href="https://www.npmjs.com/package/svelte-preprocess" target="_blank">svelte-preprocess</a>
 - <a href="https://www.npmjs.com/package/rollup-plugin-scss" target="_blank">rollup-plugin-scss</a>
 - <a href="https://www.npmjs.com/package/path" target="_blank">path</a>
@@ -30,7 +31,7 @@ import Button from '../../components/Button.svelte';
 // After
 import Button from '@/components/Button.svelte';
 ```
-- **svelte-preprocess**: svelte에 SCSS를 사용할 수 있습니다.
+- **svelte-preprocess, sass**: svelte에 SCSS를 사용할 수 있습니다.
 ```js
 // svelte.config.js
 const sveltePreprocess = require('svelte-preprocess');
